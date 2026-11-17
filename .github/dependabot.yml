@@ -1,0 +1,13 @@
+# This repository has no package dependencies, and the stdlib guard in CI keeps it that
+# way. The supply chain it does have is the actions its own workflow pins, so that is what
+# gets watched.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "ci"
+    labels:
+      - dependencies
