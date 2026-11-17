@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 19.9s ===
+Allocating sensor history buffers from the heap with explicit size limits rather than using stackÔÇæallocated arrays in the logging task. This prevents stack overflow when field environmental factors (temperature, electromagnetic interference) interacting with the added logging code cause stack usage to exceed the RTOS task's limit, which previously only manifested in the field due to marginally different timing and conditions.

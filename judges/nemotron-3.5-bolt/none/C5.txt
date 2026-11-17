@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 9.9s ===
+The single engineering decision was selecting a component with insufficient long-term reliability or lifespan for the intended four-year service period. This component failure, not external factors, caused the permanent device malfunction.

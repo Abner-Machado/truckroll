@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 18s ===
+Stage the rollout as a canary on real hardware from every manufacturing revision, gated on post-update health check-ins, instead of dispatching to the whole installed base at once. The shared manufacturing date range marks a hardware revision the image was never exercised against, so a revision-by-revision canary would have exposed the failure on a handful of units and a failed check-in gate would have halted the rollout before it reached the rest.
+
+RULE: 25

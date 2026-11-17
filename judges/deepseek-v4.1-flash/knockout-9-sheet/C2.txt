@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 98s ===
+The tick counter and every timeout/elapsed-time comparison should use an explicitly sized unsigned type (or a 64-bit counter) with wrap-safe subtraction, never a signed 32-bit absolute timestamp. After roughly 2^31ÔÇô2^32 ticks ÔÇö about eight months at a 5ÔÇô10 ms tick ÔÇö the counter rolls over, the signed or absolute comparison flips, a healthy link or sensor reads as dead and failsafe trips, while unsigned wrap-safe arithmetic stays correct across the rollover so the false fault never fires.
+
+RULE: 12

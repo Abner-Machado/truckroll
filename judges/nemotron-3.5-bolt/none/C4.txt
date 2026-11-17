@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 7.5s ===
+Implement memory protection via a Memory Protection Unit. It would prevent memory corruption caused by load-induced control unit misbehavior.

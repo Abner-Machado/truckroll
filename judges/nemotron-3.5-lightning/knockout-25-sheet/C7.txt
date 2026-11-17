@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 13.5s ===
+Implementing an A/B partition scheme with signed firmware images and bootloader health checks would have prevented the fleet-wide degradation, because the bootloader would detect the new image's failure during the watchdog window and revert to the previous known-good image rather than allowing a broken image to remain active and silently degrade service across the fleet. RULE: 22

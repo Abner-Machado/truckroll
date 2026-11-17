@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 10s ===
+BEST: S1 ÔÇö item 19 requires knowing the part's erase-cycle rating and budgeting/batching writes against it, which is precisely the missing write budget that let steady telemetry exhaust 3000 P/E cycles.

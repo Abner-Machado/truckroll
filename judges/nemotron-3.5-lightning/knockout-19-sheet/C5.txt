@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 24.8s ===
+Use a RAM ring buffer for telemetry logging with periodic flushes to flash instead of writing directly to flash on every log entry, preventing flash memory endurance exhaustion after ~4 years of continuous writes.
+
+RULE: 30

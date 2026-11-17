@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 9.4s ===
+Clamp the value against the int16 bounds before the cast, rejecting or saturating out-of-range inputs explicitly.
+
+Because float-to-integer conversion is undefined for values outside the representable range, a check that commutes an over-range reading to a defined saturated value (or a diagnosed fault) keeps the module nominal, so no exception occurs and no diagnostic word is ever placed on the bus where the controller could read it as a measurement.

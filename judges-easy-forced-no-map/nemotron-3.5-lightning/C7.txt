@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 25.5s ===
+BEST: S1
+
+S1 contains items directly preventing this failure: item 29 (low power design with sleep-by-default and interrupt-based wakeup) directly addresses the battery drain symptom; item 10 (avoid dynamic memory allocation after startup) prevents memory leaks that cause gradual degradation; item 14 (hardware watchdog fed from health checks) detects hangs; and item 22 (A/B partition with watchdog-reverted boots) ensures faulty OTA images can be reverted rather than leaving devices in a broken state that slowly drains batteries.

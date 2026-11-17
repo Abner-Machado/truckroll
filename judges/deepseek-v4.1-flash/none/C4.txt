@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 9.5s ===
+The single decision was to size the stack from a measured worst-case depth (high-water-mark instrumentation plus static stack analysis under maximum call nesting and interrupt load) instead of from documented nominal margins. That would have exposed the load-only path as the true worst case and forced enough headroom that the overflow never reached adjacent RAM, which is what an MPU would otherwise have caught.

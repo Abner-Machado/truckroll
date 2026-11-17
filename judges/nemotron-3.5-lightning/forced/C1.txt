@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 12.8s ===
+BEST: S1
+
+S1 contains item 30 which explicitly states "never call `printf` in interrupt context" ÔÇö directly preventing the failure mode where adding sensor history logging causes field resets. The logging likely used `printf` in interrupt context, causing stack overflows or timing issues that trigger resets in the field but not on the bench. Other S1 items (5, 6, 10, 31) are also relevant, but 30 most directly addresses the root cause. S2 is too generic, and S3 is empty.

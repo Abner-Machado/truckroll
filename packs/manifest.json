@@ -1,0 +1,83 @@
+{
+  "forced_label_map": {
+    "C1": {
+      "S1": "sheet",
+      "S2": "generic",
+      "S3": "none"
+    },
+    "C2": {
+      "S1": "generic",
+      "S2": "none",
+      "S3": "sheet"
+    },
+    "C3": {
+      "S1": "none",
+      "S2": "sheet",
+      "S3": "generic"
+    },
+    "C4": {
+      "S1": "sheet",
+      "S2": "generic",
+      "S3": "none"
+    },
+    "C5": {
+      "S1": "generic",
+      "S2": "none",
+      "S3": "sheet"
+    },
+    "C6": {
+      "S1": "none",
+      "S2": "sheet",
+      "S3": "generic"
+    },
+    "C7": {
+      "S1": "sheet",
+      "S2": "generic",
+      "S3": "none"
+    },
+    "C8": {
+      "S1": "generic",
+      "S2": "none",
+      "S3": "sheet"
+    }
+  },
+  "knockout": null,
+  "label_order": "balanced rotation by case index",
+  "pack_digests": {
+    "forced/C1.txt": "6fcec13d6e14f3ab",
+    "forced/C2.txt": "9e9a29b289c1a136",
+    "forced/C3.txt": "64b300717a2e1f21",
+    "forced/C4.txt": "104cce522b3f700b",
+    "forced/C5.txt": "3cccb1bc04a58223",
+    "forced/C6.txt": "0833814544ecb2d4",
+    "forced/C7.txt": "069b6c033e66f700",
+    "forced/C8.txt": "3dd5f0698091017e",
+    "generic/C1.txt": "565e7f5f64ef943a",
+    "generic/C2.txt": "19cd26e48fc1725f",
+    "generic/C3.txt": "5e209f1f479fd515",
+    "generic/C4.txt": "031666d72775b668",
+    "generic/C5.txt": "c6d65846be2b63ac",
+    "generic/C6.txt": "d91dde42eb4e8850",
+    "generic/C7.txt": "efa0b2617cc505a8",
+    "generic/C8.txt": "a7f171719daacbb0",
+    "none/C1.txt": "66ec890dd41ff86b",
+    "none/C2.txt": "91460e9882d4e1f3",
+    "none/C3.txt": "447c19300668398b",
+    "none/C4.txt": "e7777817eb77d3ee",
+    "none/C5.txt": "b50d16e594409369",
+    "none/C6.txt": "69b34db15de1064f",
+    "none/C7.txt": "1e233626ebd68174",
+    "none/C8.txt": "322cfaecab497bcc",
+    "sheet/C1.txt": "cf2aa78ffd566195",
+    "sheet/C2.txt": "98be6f8942468c25",
+    "sheet/C3.txt": "c932051ea9b8607f",
+    "sheet/C4.txt": "5222d5bc09c85d3e",
+    "sheet/C5.txt": "138d087e0cda3087",
+    "sheet/C6.txt": "dddb935b5abd8b4c",
+    "sheet/C7.txt": "80afe4862b08d698",
+    "sheet/C8.txt": "e81708ae4695a676"
+  },
+  "report": "report_hard",
+  "sheet_digest": "2ff52ae1b68849d0",
+  "version": "0.1.0"
+}

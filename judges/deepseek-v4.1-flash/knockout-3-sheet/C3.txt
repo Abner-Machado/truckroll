@@ -1,0 +1,6 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 38.3s ===
+Treat every read from a peripheral as a bounded transaction that can fail, and drive the control loop from an explicit "sample valid/fresh" state rather than from whatever value happens to be in the buffer.
+
+With a timeout on the sensor exchange and a mandatory validity check, the controller would have detected that the module was no longer answering (or was reporting itself faulted) and taken the safe path instead of converting an absent or garbage sample into a full-scale command.
+
+RULE: 8

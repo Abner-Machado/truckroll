@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 8.7s ===
+The single engineering decision that would most likely have prevented this is implementing hardware revision detection with version gating in the firmware update process, so that revision A units would refuse to apply a revision B-specific update. This would have prevented it because the update would have been blocked on revision A hardware before it could brick the devices, avoiding the need for physical recovery.

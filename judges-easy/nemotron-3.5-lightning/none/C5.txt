@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 13.6s ===
+The engineering decision to not calculate or enforce a write budget based on the flash memory's 3000 P/E cycle endurance rating, allowing unlimited writes that eventually exhausted per-cell limits.
+
+Implementing a write budget would have capped total writes at a level sustainable over the device's four-year lifetime, preventing any cell from reaching its endurance threshold.

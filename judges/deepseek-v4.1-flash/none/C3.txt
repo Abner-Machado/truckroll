@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 21.1s ===
+A controller that consumes sensor health as part of the measurement contract ÔÇö every reading carries a validity/heartbeat flag, and the control law refuses any value whose source is faulted, stale, or offline ÔÇö rather than trusting the raw payload. That gate closes the window between the internal exception and the module dropping off the bus, so the impossible reading is discarded and the actuator holds safe state instead of slewing to full scale.

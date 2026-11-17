@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 9.8s ===
+Implement sensor module internal exception handling before commanding actuator deflection. This would have prevented the actuator command from executing while the sensor module was in an exceptional and offline state.

@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 19s ===
+The firmware update was deployed without comprehensive long-term runtime testing on target hardware that would have exposed resource-leak or timing-dependent bugs. Such testing would have identified the gradual resource accumulation issue before release, preventing the slow degradation that appears two weeks after update deployment across the installed base.

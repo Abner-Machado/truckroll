@@ -1,0 +1,3 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 22.1s ===
+BEST: S3
+S3's item 9 explicitly requires wrap-safe unsigned deadline arithmetic, which prevents the signed 32-bit 10 ms uptime counter from overflowing into failsafe after ~248 days; S1 and S2 contain nothing that targets this.

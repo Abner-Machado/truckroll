@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 21.6s ===
+The decision was to ship the update to the entire installed base at once instead of gating it behind a staged rollout with held-back controls and a rollback path.
+
+That would have prevented it because a defect driven by accumulated exposure rather than install-time state would have surfaced in the small first cohort while the bulk of the fleet stayed on known-good firmware, capping the blast radius and buying the weeks needed to detect it and halt the release.

@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 12.5s ===
+Adopt an A/B partition scheme with signed firmware images that self-verify health on boot within a watchdog window, causing the bootloader to revert to the previous healthy image if the new one fails, so units that appear healthy initially but harbor latent defects are detected and rolled back before they can impact the fleet.
+
+RULE: 22

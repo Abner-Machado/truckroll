@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 18.1s ===
+BEST: S1
+
+The failure describes an OTA update that initially makes all units appear healthy but causes them to lose function after two weeks. S1 item 22 directly addresses this: "Ship updates with an A/B partition scheme and signed images, and require the new image to confirm its own health inside a watchdog window or the bootloader reverts. Failing to boot is the easy case; booting into an image that runs and is broken is the one that costs the fleet." This prevents devices from booting into a seemingly healthy but actually broken firmware image. S2 is too generic, and S3 is empty.

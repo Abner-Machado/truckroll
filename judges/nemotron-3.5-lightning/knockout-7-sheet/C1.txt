@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 16.1s ===
+Replace `printf`-based sensor history logging with a structured ring buffer logger operating in task context, eliminating `printf` from interrupt handlers. The `printf` function can cause non-deterministic blocking and stack overflow in interrupt context, triggering the watchdog timer and causing field resets that do not reproduce on the bench where `printf` behavior differs in the host environment.
+
+RULE: 30

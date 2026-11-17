@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 12.9s ===
+Implementing rollback protection (anti-downgrade firmware version checking) in the bootloader to reject any firmware image with a version lower than the currently deployed version. This would prevent the attack because even though the malicious firmware is correctly signed with the vendor key, the bootloader would reject it since its version number is lower than the minimum allowed version, thereby blocking the installation of the vulnerable previous release.

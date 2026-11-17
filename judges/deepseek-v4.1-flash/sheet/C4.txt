@@ -1,0 +1,6 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 14s ===
+Size every task stack from measured worst-case usage, with the kernel's stack-overflow check enabled and the high-water mark read after the heaviest real path rather than an idle run, keeping headroom ÔÇö Rule 11.
+
+That would have exposed the true peak stack depth under maximum interrupt nesting and load, which a static "comfortable margins" estimate misses, instead of leaving an overflow that silently corrupts adjacent RAM on a part with no MPU to trap it.
+
+RULE: 11

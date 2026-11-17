@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 10.9s ===
+Implement real-time sensor value range validation with absolute physical bounds checking before any actuator command generation, with automatic substitution of the last valid reading when values exceed plausibility thresholds. This would reject or neutralize impossible sensor readings that no physical condition could produce, preventing the controller from commanding full-scale actuator deflection based on invalid data.

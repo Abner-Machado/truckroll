@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 14.5s ===
+The single engineering decision that would most likely have prevented this is to implement wear-aware storage using a flash file system such as littlefs, budgeting writes per day against the part's erase-cycle figure and batching writes to avoid exceeding the flash's endurance limit. This would prevent it because continuous telemetry logging generates daily writes that, without wear leveling and write budgeting, cause the flash memory to wear out after approximately four years, resulting in permanent failures that cluster by in-service date since all units from the same batch experience similar write patterns.
+
+RULE: 19

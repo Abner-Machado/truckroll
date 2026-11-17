@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 20.6s ===
+The engineering decision to implement stack overflow detection would most likely have prevented this, as it would have triggered a safe failure mode before stack corruption from the unbounded recursive call path under heavy load could silently corrupt the control unit's state, given the system has no memory protection unit.

@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 24.8s ===
+Closest fit on the sheet: make the out-of-range conversion take the error path to the fault record instead of letting it pass as healthy data ÔÇö the sheet has no rule for range-checking a cast or for keeping status words off the measurement channel, so rule 3 is the nearest analogue. That would have prevented it because the overflow would have been classified as an error at the point of conversion, so no diagnostic word would ever have occupied the channel the downstream controller trusted as a measurement.
+
+RULE: 3

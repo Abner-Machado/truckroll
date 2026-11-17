@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 13.1s ===
+The single engineering decision that would most likely have prevented this: implementing real-time battery state-of-charge monitoring with automatic low-battery hibernation before complete depletion.
+
+How it would have prevented it: The system would have detected the gradual power consumption increase weeks earlier and automatically transitioned to safe hibernation mode, preserving battery life and preventing the complete shutdown that occurred after the two-week delay.

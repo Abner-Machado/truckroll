@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 11.1s ===
+Enforce an anti-rollback security version counter: the bootloader compares the image's signed version against a monotonic counter fused in OTP/eFuses that only increases.
+
+Because a correctly signed older image would present a version lower than the device's ratcheted counter, the bootloader would reject it, so brief physical access could no longer reintroduce the vulnerable release.

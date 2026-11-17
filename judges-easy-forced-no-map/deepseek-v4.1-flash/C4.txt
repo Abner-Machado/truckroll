@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 12.1s ===
+BEST: S2 ÔÇö item 11 requires sizing stacks from measured high-water marks on the worst-case path and enabling the kernel's stack-overflow check, which is exactly the gap the static 41% estimate and the unguarded 94% recursion exposed; S1 is empty and S3 only says "test thoroughly" without any stack measurement or overflow detection.

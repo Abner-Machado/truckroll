@@ -1,0 +1,6 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 47.5s ===
+The update should have been gated on a per-day write budget checked against the flash part's rated erase cycles, with writes batched and a power-loss-safe, wear-levelling filesystem such as littlefs underneath.
+
+The new image multiplied write traffic, so the units with the heaviest use burned through their endurance margin over those two weeks and progressively lost the non-volatile state their primary function depends on ÔÇö a writes-per-day-versus-endurance calculation would have flagged that before the image shipped.
+
+RULE: 19

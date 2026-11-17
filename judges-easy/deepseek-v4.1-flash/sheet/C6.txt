@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 15.9s ===
+Canary every release on real devices covering each hardware revision, then phase the rollout with each stage gated on post-update healthy check-ins. A revision A unit in the canary would have failed its health check and stopped the rollout before the revision B image reached the rest of the installed base, so no unit would have needed physical recovery.
+
+RULE: 25

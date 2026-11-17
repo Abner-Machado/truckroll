@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 11.4s ===
+RTOS task scheduling analysis. It would reveal timing or resource contention issues specific to field conditions or increased logging overhead not present on the bench.

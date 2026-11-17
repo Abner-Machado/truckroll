@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 58.4s ===
+Guard the shared lock with a priority-inheriting mutex instead of a binary semaphore, with each task's priority justified in writing. Priority inheritance would have raised the low-rate housekeeping task to the high-rate task's priority for the duration of the critical section, so the mid-rate tasks could not preempt it and prolong the block, the lock would be released quickly, and the high-rate task would have met its deadline instead of stalling into the reset.
+
+RULE: 7

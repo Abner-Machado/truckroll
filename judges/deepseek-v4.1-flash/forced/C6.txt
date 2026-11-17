@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 11.6s ===
+BEST: S2 ÔÇö item 22 (A/B partitions that must confirm their own health inside a watchdog window, or the bootloader reverts) directly turns the unrecoverable remote brick into an automatic local rollback, and item 25's phased canary on devices of every hardware revision would have caught the manufacturing-date batch before the whole base was hit.

@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 11.7s ===
+BEST: S3 ÔÇö Item 24 refuses firmware images with a version counter below the device's current version, preventing rollback to a signed but vulnerable old image that the bootloader would otherwise accept despite valid signature verification.

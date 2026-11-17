@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 17.5s ===
+Check the return value of every HAL, SDK and peripheral call, and give the error a path to the fault record, so that failed transfers are reported rather than silently ignored. This would have prevented the issue because a driver that ignores a failed transfer reports healthy while the device is deaf, allowing subtle memory or peripheral errors to accumulate under heavy load without any diagnostic path.
+
+RULE: 3

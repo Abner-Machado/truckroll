@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 17.3s ===
+Shipping the update as a canary on real devices of every hardware revision, then phasing the rollout with each stage gated on post-update healthy check-ins, instead of pushing to the entire installed base at once. The battery drain that only surfaced two weeks later would have appeared in the canary cohort while only a small fraction of the fleet was exposed, letting it be caught and halted before the whole base was affected. RULE: 25

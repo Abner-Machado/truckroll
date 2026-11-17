@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 20.3s ===
+A single engineering decision that would most likely have prevented this: Using proper unsigned subtraction `(now - start) >= timeout` with wrapÔÇæaround awareness for all deadline checks, so the 32ÔÇæbit millisecond counter rolling over every ~49.7 days does not cause the firmware to incorrectly enter failsafe after extended operation.
+
+RULE: 9

@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 12.4s ===
+Using electrolytic capacitors rated for 10-year continuous operation instead of standard 2000-hour ratings would have prevented the failures, as the original capacitors degraded after approximately four years of continuous telemetry logging, causing irreversible power supply failure that could not be field-repaired.

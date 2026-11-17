@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 27.9s ===
+Rule 10: Dynamic memory allocation after startup was likely used for buffers that accumulated leaks over time, gradually exhausting available RAM and preventing the device from entering low-power sleep modes, which over two weeks caused increasing battery drain until devices shut down completely. Static allocation from fixed-size pools sized at compile time would make memory usage predictable and bounded, eliminating the gradual resource exhaustion.
+
+RULE: 10

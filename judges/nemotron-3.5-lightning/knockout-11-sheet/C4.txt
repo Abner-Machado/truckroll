@@ -1,0 +1,6 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 15.9s ===
+Implement a fault handler that records the program counter, fault registers, and reset reason in retained RAM, then reboots and reports the record on the next boot instead of spinning in `while(1)`.
+
+This prevents silent memory corruption from going undetected; when a memory error occurs under heavy load without an MPU, the fault handler ensures the device reboots and logs the fault, making the issue reproducible and allowing recovery instead of the device appearing healthy while malfunctioning.
+
+RULE: 15

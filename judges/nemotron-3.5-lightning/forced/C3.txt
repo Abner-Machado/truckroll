@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 28.4s ===
+BEST: S3
+
+The "Validate all external input" item in S3 would directly prevent this failure by ensuring the controller checks whether a sensor reading is physically plausible before commanding a full-scale actuator deflection. The sensor produced a reading no physical condition could produce ÔÇö proper input validation would catch this impossibility and prevent the dangerous actuator command. S2's items focus on HAL return values and hardware timeouts, which address communication reliability but don't directly guard against acting on physically impossible data. S1 is empty, so it contains no preventive items.

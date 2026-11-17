@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 14.3s ===
+Use a priority-inheritance mutex for that lock instead of a plain semaphore. With inheritance, the low-rate task holding the lock temporarily runs at the high-rate task's priority, so it finishes its critical section quickly instead of being preempted by the mid-rate tasks and blocking the deadline.

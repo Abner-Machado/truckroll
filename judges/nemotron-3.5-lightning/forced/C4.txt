@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 13.5s ===
+BEST: S1
+
+S1 contains item 10: "Avoid dynamic memory allocation after startup; allocate buffers statically or from fixed-size pools sized at compile time." This directly prevents the failure because the system has no memory protection unit ÔÇö eliminating dynamic allocation after startup removes heap corruption, out-of-memory crashes, and other memory-related failures that would be especially dangerous under heavy load on an unprotected part. S2's items are too generic (clean code, coding standards, etc.) to specifically prevent this failure, and S3 is empty.

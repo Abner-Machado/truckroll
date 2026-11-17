@@ -1,0 +1,6 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 18.7s ===
+Stage the rollout instead of pushing to the entire installed base at once: canary on real devices covering every hardware revision, then phase wider only as each stage passes its post-update healthy check-ins.
+
+It would have confined the slow battery drain to a small early cohort whose degradation surfaced during the soak window, letting the gate halt the rollout before the rest of the fleet was exposed.
+
+RULE: 25

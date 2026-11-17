@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 17.4s ===
+BEST: S3 ÔÇö item 24 rejects any image whose version counter is below the one already on the device, which is exactly what stops a signed but year-old vulnerable build from being installed.

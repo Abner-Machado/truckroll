@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 20.3s ===
+The uptime counter is a signed 32-bit value incremented every 10 ms; it wraps after ~248.5 days, and after 8 months of continuous operation the counter nears wrap-around. When the counter wraps, signed subtraction in time comparisons produces incorrect results, causing all units to enter failsafe simultaneously. Using unsigned subtraction with `(now - start) >= timeout` and explicitly assuming counter wrap-around would have prevented this.
+
+RULE: 9

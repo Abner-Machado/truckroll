@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 19.7s ===
+Roll out the patched firmware under a phased, health-gated fleet rollout that canaries every hardware revision and only closes when each device checks in on the new version. That would have kept this unit visibly stuck on the old image and blocked the rollout from being declared complete, instead of leaving a validly signed but stale vulnerable build running in the field.
+
+RULE: 25

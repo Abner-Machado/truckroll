@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 12.2s ===
+Store the uptime and deadline counters as unsigned 32-bit values and compare elapsed time with unsigned subtraction; the signed 32-bit 10 ms counter crosses 2^31 at about 248 days, so every deadline comparison flipped negative and looked overdue at once, which is why co-commissioned units tripped together. Unsigned wrap-around arithmetic made the elapsed-time test stay correct across the rollover instead of firing a false timeout into failsafe.
+
+RULE: 9

@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 10.3s ===
+Requiring the bootloader to reject any signed image whose version counter is below the version already installed. Because the vulnerable firmware predates the patch, its signed image would have been refused instead of accepted, so the device could not have run, or been rolled back to, the known-bad build.
+
+RULE: 24

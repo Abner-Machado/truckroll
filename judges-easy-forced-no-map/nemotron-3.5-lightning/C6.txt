@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 15.8s ===
+BEST: S3
+
+S3 contains item 25: "Never update the whole fleet at once: canary on real devices of every hardware revision, then phase the rollout, each stage gated on post-update healthy check-ins." This directly prevents the failure by ensuring revision A units are identified during canary testing and excluded from the B-revision rollout, with post-update health checks catching issues before wider deployment. S1's "plan for backwards compatibility" is too generic, and S2 is empty.

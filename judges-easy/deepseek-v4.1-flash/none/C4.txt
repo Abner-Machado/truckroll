@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 11.1s ===
+Bound the call depth explicitly ÔÇö replace the recursive path with an iterative form, or cap recursion at a statically proven maximum.
+
+That guarantees a fixed, worst-case stack footprint the linker/stack budget can be verified against, so the 94% excursion under the heavy-load sequence cannot occur and no silent overflow is possible without an MPU to catch it.

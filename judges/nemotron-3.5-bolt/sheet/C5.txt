@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 12.1s ===
+The single engineering decision most likely to have prevented the failure was to implement a fault handler that records and resets the program counter and fault registers upon failure. This would have turned a permanent, dead unit from a recoverable fault into a unit that could be diagnosed and rebooted. RULE: 15

@@ -1,0 +1,6 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 37.5s ===
+Assume every monotonic counter and every stored deadline wraps, and compare elapsed time with unsigned subtraction ÔÇö `(now - start) >= timeout` ÔÇö rather than storing or comparing absolute values.
+
+A failure that tracks in-service date with no dependence on duty or climate is the signature of a counter crossing its range (the tick rate and width set where that lands, roughly four years here), so the absolute compare or stored "next deadline" inverts and the condition stays true for the rest of the unit's life instead of clearing, leaving it latched and unrecoverable without the reset or reflash the firmware never performs.
+
+RULE: 9

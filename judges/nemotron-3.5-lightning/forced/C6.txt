@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 15.5s ===
+BEST: S2
+
+S2 contains item 25 which directly addresses the failure scenario: "Never update the whole fleet at once: canary on real devices of every hardware revision, then phase the rollout, each stage gated on post-update healthy check-ins." The affected units sharing a manufacturing date range indicates different hardware revisions, and this item's canary approach would catch bricking issues on specific revisions before fleet-wide deployment. S3's items are too general to directly prevent this specific fleet-update failure.

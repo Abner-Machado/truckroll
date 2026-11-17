@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 24.8s ===
+BEST: S3
+
+S3 contains the most directly preventive items, particularly item 14 ("Enable the hardware watchdog in production builds and feed it only from a health check that confirms every critical task is alive") which directly addresses the 8-month recurring failsafe. The clustered failures by commissioning date and the ~8-month recurrence pattern are classic signs of a system that hangs or loses responsiveness over time without proper watchdog/health monitoring. S3's watchdog implementation with health checks would prevent the controller from entering an unrecoverable failsafe state by detecting and responding to critical task failures before they cause system-wide hangs. S1 only has a generic "Use a watchdog timer" item without the health check specificity, and S2 is empty.

@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 91.6s ===
+Using unsigned, wrap-safe time arithmetic for the uptime counter and every deadline comparison instead of a signed 32-bit value, because a signed counter overflows into negative at ~2^31 ticks (Ôëê248 days at 10 ms ÔÇö the eight-month mark, explaining why same-day units fail together), whereas unsigned subtraction `(now - start) >= timeout` keeps comparisons correct through the wrap. RULE: 9

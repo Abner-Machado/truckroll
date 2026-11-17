@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 11.2s ===
+BEST: S1
+
+S1 contains items 22-24 that directly prevent firmware downgrade attacks: A/B partition scheme with signed images and health checks (item 22), bootloader signature verification with an immutable key (item 23), and refusing images with version counters below the device's current version (item 24). These specifically address the scenario where an attacker with physical access installs a previous vulnerable firmware that is correctly signed but should be rejected. S2 is empty, and S3's "Keep firmware updates secure" is too vague, while its "Plan for backwards compatibility" could actually enable the attack by allowing old vulnerable images.

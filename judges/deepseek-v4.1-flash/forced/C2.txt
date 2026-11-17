@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 15.2s ===
+BEST: S3
+
+Its item 9 requires deadline comparisons by unsigned subtraction that assume the tick counter wraps; the identical elapsed interval since a shared commissioning date, cleared by power cycle and recurring after the same period, is a time-base rollover ÔÇö while S1's closest entry (watchdog) only reboots the unit into the same fault.

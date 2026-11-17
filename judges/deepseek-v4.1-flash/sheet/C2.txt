@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 18.1s ===
+Writing every elapsed-time comparison as a wrap-safe unsigned subtraction, `(now - start) >= timeout`, and treating the tick counter as modular rather than monotonic, is the decision that would most likely have prevented it. A fixed-period counter rollover at a known offset from commissioning is exactly what would make same-day units trip within minutes of one another and re-trip after a power cycle restarts the count, and wrap-safe arithmetic keeps the deadline test correct on both sides of the rollover instead of letting a stale absolute timestamp look like a permanently expired or permanently unexpired deadline.
+
+RULE: 9

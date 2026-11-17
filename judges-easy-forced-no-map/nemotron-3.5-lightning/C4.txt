@@ -1,0 +1,5 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 30.1s ===
+S2: It contains item 11 about sizing task stacks from measurement and turning on the kernel's stack-overflow check, which would have caught the 94% stack usage before it caused failure. S1 is empty, and S3 only has generic firmware practices without specific stack overflow detection.
+BEST: S2
+
+S2 item 11 directly addresses stack overflow detection by requiring stacks be sized from measurement with kernel overflow checks and high-water mark reading, which would have caught the 94% stack usage. S1 is empty and S3 only has generic firmware practices without specific stack overflow detection.

@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 17.4s ===
+Use a mutex with priority inheritance (not a binary semaphore) for the shared sensor-history buffer, with each task's priority deliberately chosen and documented. The low-rate housekeeping task would inherit the high-rate task's priority while it holds the lock, so the mid-rate tasks could no longer preempt it indefinitely and the high-rate task's blocking time would be bounded by the short critical section instead of stretching past its deadline.
+
+RULE: 7

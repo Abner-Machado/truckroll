@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 59.5s ===
+The decision was to write wear-aware storage code that budgets telemetry writes against the flash part's 3000-cycle erase rating instead of treating the 8 GB part as an infinite disk. Budgeting and batching writes (ideally on a wear-leveling, power-loss-safe file system like littlefs) would have kept per-cell erase cycles well below the rating over four years, so the cells would not have worn out and the units would not have become permanently unrepairable.
+
+RULE: 19

@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 10.5s ===
+Ship OTA updates as signed A/B images that must confirm their own health inside a watchdog window, with the bootloader reverting to the previous slot on failure. This would have confined the damage to one slot and let every affected unit ÔÇö including the manufacturing-date subset whose hardware the new image mishandled ÔÇö reboot into the last known-good firmware instead of becoming network-unrecoverable.
+
+RULE: 22

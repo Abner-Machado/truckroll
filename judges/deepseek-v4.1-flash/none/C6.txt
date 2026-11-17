@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 14.9s ===
+Gate the update on hardware revision and production lot, validating the image against every silicon, flash and bootloader variant in the installed base before dispatch. It would have prevented this by screening out the affected manufacturing range at the compatibility check instead of writing firmware its boot path cannot recover from.

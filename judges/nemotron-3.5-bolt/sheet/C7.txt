@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 6.9s ===
+The single engineering decision that would most likely have prevented this was to never update the whole fleet at once. This would have prevented the failure by allowing a phased rollout where issues would have been caught on a small subset of devices before impacting the entire base. RULE: 25

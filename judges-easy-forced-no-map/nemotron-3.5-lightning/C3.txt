@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 19.4s ===
+BEST: S2
+
+S2 contains "Validate all external input" which would have prevented the failure by catching the out-of-range floating point value before the unguarded conversion to 16-bit signed integer. Neither the empty S1 nor S3 (which focuses on RTOS, memory management, and hardware abstraction but lacks input validation items) directly address this class of error.

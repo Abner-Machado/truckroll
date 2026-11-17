@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 24.1s ===
+BEST: S1
+
+S1 contains items 13 and 19 that directly address flash wear: item 13 tracks flash/RAM usage per build in CI against an agreed budget, and item 19 explicitly writes wear-aware storage code that knows the erase-cycle figure, budgets writes per day, batches writes, and uses flash file systems like littlefs designed for power loss and wear leveling. S2 is empty, and S3 has no items specifically about flash endurance or write budgeting.

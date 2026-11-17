@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 11.8s ===
+The decision was to design the telemetry store against a documented endurance budget ÔÇö sizing the write rate, buffering, and circular-log placement so total bytes written stay inside the part's rated 3000 cycles over the service life.
+
+That would have prevented it by making the wear-out date a calculated design margin rather than a surprise, forcing either a lower write rate, larger/over-provisioned allocation spread across the whole 8 GB, or a longer-life part before units shipped.

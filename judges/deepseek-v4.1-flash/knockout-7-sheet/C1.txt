@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 25.7s ===
+Make every non-volatile update transactional ÔÇö write the new copy, verify it, then commit by switching the pointer or sequence number ÔÇö and enable the brown-out detector so the part stops writing before the rail leaves spec. It would have prevented the resets by removing the corruption window that frequent sensor-history flash writes opened when the field supply dipped, rather than on the bench's clean rail.
+
+RULE: 20

@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 20.2s ===
+Enforce a monotonic anti-rollback version counter in the bootloader as part of image acceptance. It would have rejected the older, correctly signed release because its counter is below the installed one, so the vulnerable image could not boot. RULE: 24

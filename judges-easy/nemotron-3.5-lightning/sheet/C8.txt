@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 14.2s ===
+The single engineering decision that would most likely have prevented this is implementing version-based rollback protection that refuses to boot any firmware image with a version counter lower than the currently active version. This would have prevented it because the bootloader would reject the attacker-installed previous firmware even though it's correctly signed with the vendor key, since its version counter would be below the one already running on the device.
+
+RULE: 24

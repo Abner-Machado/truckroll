@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 8.3s ===
+Implementing a memory protection unit (MPU) with strict region boundaries. The MPU would have isolated critical firmware from user data buffers, preventing memory corruption from causing intermittent system misbehavior under heavy load and making failures reproducible rather than Heisenbugs that never manifest on the bench.

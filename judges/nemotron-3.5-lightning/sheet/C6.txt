@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 17.4s ===
+Using an A/B partition scheme with signed images and bootloader health verification so the new image must confirm its own health within a watchdog window or the bootloader reverts to the previous good image. RULE: 22

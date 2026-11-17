@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 11.5s ===
+Check the return value of every HAL, SDK and peripheral call, and give the error a path to the fault record. This would have prevented the actuator deflection because the application logic would have known the sensor module had failed and not acted on faulty data. RULE: 3

@@ -1,0 +1,5 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 13.7s ===
+Name the single engineering decision that would most likely have prevented this, in one sentence.
+Rule 3: Check the return value of every HAL, SDK and peripheral call, and give the error a path to the fault record.
+It would have prevented the reset by detecting the error during sensor history logging instead of waiting for a field failure.
+RULE: 3

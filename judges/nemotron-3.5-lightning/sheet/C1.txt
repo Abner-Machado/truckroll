@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 34.9s ===
+The single engineering decision that would most likely have prevented this is to implement wear-aware storage for sensor history logging, knowing the flash erase-cycle budget and using a flash file system like littlefs to batch writes within endurance limits. Repeated unbatched flash writes for sensor history logging would eventually exhaust the flash's endurance limit, causing bit errors or write failures that trigger device resets; wear-aware code with batching and endurance budgeting would keep writes within the flash's safe operating range, preventing the field resets.
+
+RULE: 19

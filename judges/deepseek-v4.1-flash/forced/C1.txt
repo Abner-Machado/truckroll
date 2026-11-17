@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 17.2s ===
+BEST: S1
+
+S1 item 20 (transactional non-volatile writes with the brown-out detector enabled, backed by 19's power-loss-safe filesystem) is the only item aimed at a field-only reset caused by the new sensor-history flash writes ÔÇö on the bench the rail is clean, in the field a brown-out mid-erase corrupts state and resets the unit; S2 only says "use a watchdog," which hides the symptom, and S3 is empty.

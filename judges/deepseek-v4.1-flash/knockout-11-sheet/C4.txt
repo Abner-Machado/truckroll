@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 40.1s ===
+Measure real worst-case RAM ÔÇö deepest interrupt nesting and per-task stack high-water marks ÔÇö and enforce it as a CI budget that fails the build, instead of trusting the comfortable figures in the design documents. That would have exposed the true peak demand before release, so the overflow that, with no MPU, silently overwrote adjacent memory only at peak load would have been caught rather than shipped.
+
+RULE: 13

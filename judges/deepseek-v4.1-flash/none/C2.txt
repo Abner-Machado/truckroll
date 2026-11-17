@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 29.1s ===
+The decision that would most likely have prevented this is to run all uptime and timeout logic on an overflow-safe time baseÔÇöa 64-bit monotonic tick counter, or unsigned ticks compared by modular subtractionÔÇörather than a fixed-width signed counter.
+
+That would have prevented it because the device is tripping on a boot-relative tick count that wraps to a negative or stale-looking value the heartbeat/failsafe check misreads as a timeout, and overflow-safe timekeeping keeps every such comparison valid for the life of the unit.

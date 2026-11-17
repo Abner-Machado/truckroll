@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 39.1s ===
+`BEST: S2` ÔÇö item 3 forces the failed reads from a sensor that had just taken itself offline to surface as an error with a fault-record path, so the controller would have had no valid reading to drive a full-scale command; the generic arm's "handle errors gracefully" or "validate external input" is too vague to catch that specific silent-deaf-device case.

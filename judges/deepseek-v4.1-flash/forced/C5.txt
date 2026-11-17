@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 13.2s ===
+BEST: S3 ÔÇö item 19 (wear-aware flash storage: erase-cycle figure, per-day write budget, batched writes, littlefs) is the only item targeting flash endurance exhaustion, which is what makes continuously-logging units die on a fixed calendar schedule and stay dead.
+
+S1's closest items ("monitor devices", "avoid memory leaks") don't touch wear; S2 is empty.

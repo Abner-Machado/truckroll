@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 15.4s ===
+Full-scale actuator deflection commanded from an impossible sensor reading indicates the system continued operating on stale or invalid data after the sensor went offline. A timeout on every hardware wait would have forced the controller to detect the sensor's offline status from its logged exception and substitute safe defaults instead of acting on unphysical data.
+
+RULE: 8

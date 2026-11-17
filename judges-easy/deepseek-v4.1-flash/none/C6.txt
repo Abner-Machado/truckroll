@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 10s ===
+Embed the hardware revision in the firmware's compatibility manifest and have the updater refuse to flash any image whose declared revision doesn't match the board. Revision A units would then have rejected the revision B image at the compatibility check and kept running their working firmware instead of applying it and dying.

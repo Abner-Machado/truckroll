@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 17s ===
+Requiring a verified worst-case stack and RAM budget for every taskÔÇöstatic stack depth analysis plus a runtime high-water-mark check in CIÔÇöbefore the logging feature was allowed in, and mandating that history logging be bounded and streamed to flash rather than accumulated in RAM.
+
+That decision would have exposed the shrunken margin on the bench instead of the field, since an overflow that needs a particular interrupt nesting and timing patternÔÇöpresent under field load but never in a debugger-slowed bench sessionÔÇöwould have been flagged as a budget violation at build time, forcing the history buffer to be sized and drained deterministically rather than silently eating the headroom that only the field workload consumes.

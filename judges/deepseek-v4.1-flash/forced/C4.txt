@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 8.7s ===
+BEST: S1 ÔÇö item 11 sizes task stacks from the measured worst-case high-water mark with the kernel's stack-overflow check and headroom, which is exactly the rare heavy-load stack overrun that "comfortable" document margins miss, and with no MPU it silently corrupts memory instead of faulting.

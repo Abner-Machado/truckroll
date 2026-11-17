@@ -1,0 +1,3 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 31.1s ===
+Size every task stack from measured worst-case usage with the kernelÔÇÖs stack-overflow check enabled and keep headroom. Measuring the high-water mark on the real worst-case path would have exposed the true near-full stack and tripped overflow detection before the field failure instead of trusting the static estimate.
+RULE: 11

@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 12.8s ===
+**BEST: S3**
+
+Item 19 in S3 directly addresses flash wear from continuous telemetry logging: "Write wear-aware storage code: know the erase-cycle figure of the part, budget writes per day against it, batch writes, and use a flash file system such as littlefs, which is designed around power loss rather than only around wear." The failure patternÔÇöpermanent failure after ~4 years, clustering by in-service dateÔÇömatches flash endurance exhaustion from continuous writes, which this item specifically prevents. S1 lacks flash-wear items, and S2 is empty.

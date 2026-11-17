@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 15s ===
+Switching to a 64-bit unsigned integer for the uptime counter prevents the overflow that occurs after approximately 248 days of 10 ms increments, which aligns with the eight-month failure pattern and causes all co-commissioned units to enter failsafe simultaneously.

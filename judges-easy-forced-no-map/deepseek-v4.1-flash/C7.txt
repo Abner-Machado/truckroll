@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 11.4s ===
+BEST: S1 ÔÇö item 25 (canary the update on real devices of every hardware revision, then phase the rollout) would have caught a slow battery-drain regression on a small real-device cohort before it reached the entire installed base, since the immediate post-update health check could never surface a failure that only appears weeks later.

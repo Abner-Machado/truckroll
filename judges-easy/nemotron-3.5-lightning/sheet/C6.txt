@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 22.1s ===
+An OTA rollout that canaries on every hardware revision before fleet-wide dispatch, so revision B firmware is only pushed to revision B units after validation on real revision B hardware.
+
+RULE: 25

@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 26.4s ===
+Use an unsigned (or wider, e.g. 64-bit) uptime counter instead of a signed 32-bit one. At one tick per 10 ms, 2┬│┬╣ ticks elapse in ~248 days (~8 months), after which the signed counter wraps negative and the failsafe logic reads that negative uptime as invalid ÔÇö which is why every unit powered on the same day trips at nearly the same moment.

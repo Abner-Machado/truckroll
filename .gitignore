@@ -1,0 +1,12 @@
+# The packs are generated: `python jury.py packs` rebuilds them byte for byte, and
+# packs/manifest.json carries the digest of every one, so the prompts stay auditable
+# without 32 copies of the sheet in the history.
+packs/**/*.txt
+
+# Not mine to publish.
+.impeccable/
+__pycache__/
+
+# Working copies, not part of the record.
+*.bak
+*.bak-*

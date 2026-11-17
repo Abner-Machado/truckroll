@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 13.3s ===
+Use a priority-inheritance mutex (or a priority-ceiling protocol) for the bus-data lock instead of a plain binary semaphore. That way the housekeeping task inherits the high-rate task's priority while it holds the lock, so the mid-rate tasks can no longer preempt it and let the low-rate holder run unbounded, and the deadline miss ÔÇö plus the watchdog reset it triggered ÔÇö disappears.

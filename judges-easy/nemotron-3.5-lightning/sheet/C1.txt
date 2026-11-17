@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 18.3s ===
+RULE: 7
+
+Use a mutex with priority inheritance to guard the shared resource instead of a binary semaphore. Priority inheritance causes the low-rate housekeeping task to temporarily inherit the high-rate task's priority, allowing it to complete its critical section and release the lock promptly, preventing the high-rate task from missing its deadline due to unbounded priority inversion.

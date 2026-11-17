@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 8.6s ===
+Implementing rollback protection to enforce a minimum firmware version. This would have prevented the device from booting the vulnerable older image, even though it passed signature verification, by rejecting any firmware version older than the securely stored baseline.

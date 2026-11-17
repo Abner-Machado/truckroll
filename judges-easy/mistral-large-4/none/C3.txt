@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 40.1s ===
+Clamping (or otherwise range-checking) the floating-point value before casting it to int16. That would have kept the conversion within the representable range, so no exception, shutdown, or diagnostic word would ever reach the bus to be misread as a measurement.

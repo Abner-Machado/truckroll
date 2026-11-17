@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 27s ===
+An A/B partition scheme with signed images and health checks ensures the bootloader requires new images to confirm their own health inside a watchdog window, reverting to a known-good image rather than booting into vulnerable firmware.
+
+RULE: 22

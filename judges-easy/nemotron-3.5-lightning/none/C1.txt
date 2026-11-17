@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 10.4s ===
+Implement priority inheritance on the mutex protecting sensor history writes. This prevents the high-rate distribution task from blocking indefinitely when the low-rate housekeeping task holds the lock, by temporarily raising the housekeeping task's priority so it completes its critical section and releases the lock promptly.

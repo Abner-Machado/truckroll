@@ -1,0 +1,3 @@
+# The answer files are evidence. Keep their bytes as the models produced them.
+* text=auto eol=lf
+*.txt -text

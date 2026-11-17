@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 21.1s ===
+BEST: S3
+
+The incident describes a classic priority inversion scenario: a high-rate task waiting on a lock held by a low-rate housekeeping task, while mid-rate tasks preempt the low-rate task, preventing it from ever releasing the lock. S3 item #7 directly addresses this by specifying "Guard a shared resource with a mutex that carries priority inheritance, not a binary semaphore" ÔÇö priority inheritance temporarily boosts the low-rate task's priority so it can complete its critical section and release the lock, preventing the indefinite blocking that causes deadline misses and resets. S1 has general firmware best practices but no equivalent targeted item, and S2 is empty.

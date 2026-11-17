@@ -1,0 +1,237 @@
+{
+  "note": "Each case has two reports. `report_hard` gives symptoms only and is the one that counts: the first round used `report_easy`, which named the mechanism, and every arm scored near the ceiling because the answer was in the question. Both rounds are published. De-identified on purpose: a judge told the product name recites the answer from training data. Real identity and sources are in CASES.md. The key is deterministic and open to disagreement.",
+  "cases": [
+    {
+      "id": "C1",
+      "target_rule": 7,
+      "key": {
+        "all_of": [
+          [
+            "priority inheritance",
+            "priority-inheritance",
+            "inherit the priority",
+            "inherits the priority"
+          ]
+        ],
+        "any_of": [
+          [
+            "mutex",
+            "semaphore",
+            "lock"
+          ]
+        ]
+      },
+      "status": "documented",
+      "report_easy": "A controller running an RTOS resets every few hours in the field and never on the bench. A high-rate task that distributes bus data occasionally misses its deadline. A trace shows it waiting on a lock already held by a low-rate housekeeping task that writes sensor history, while two mid-rate tasks keep running to completion.",
+      "report_hard": "A controller running an RTOS resets in the field every few hours. It has never reset on the bench, where the same build runs the same workload. The resets became frequent in the release that added sensor history logging."
+    },
+    {
+      "id": "C2",
+      "target_rule": 9,
+      "key": {
+        "all_of": [
+          [
+            "overflow",
+            "wrap",
+            "roll over",
+            "rollover",
+            "rolls over"
+          ]
+        ],
+        "any_of": [
+          [
+            "counter",
+            "uptime",
+            "tick",
+            "32-bit",
+            "unsigned subtraction"
+          ]
+        ]
+      },
+      "status": "documented",
+      "report_easy": "A controller has been powered continuously for eight months. It enters failsafe with no external trigger. Units commissioned on the same day enter failsafe within minutes of one another. Its uptime counter is a signed 32-bit value incremented every 10 ms.",
+      "report_hard": "A controller enters failsafe with no external trigger after roughly eight months in service. Units commissioned on the same day fail within minutes of each other. A power cycle clears it, and then it happens again after about the same interval."
+    },
+    {
+      "id": "C3",
+      "target_rule": 3,
+      "also_rule": 15,
+      "key": {
+        "all_of": [
+          [
+            "error",
+            "exception",
+            "fault",
+            "return value"
+          ]
+        ],
+        "any_of": [
+          [
+            "fault record",
+            "fault path",
+            "handled",
+            "guard",
+            "check",
+            "must not",
+            "diagnostic",
+            "data path"
+          ]
+        ]
+      },
+      "status": "documented",
+      "report_easy": "A sensor module converts a floating point value to a 16-bit signed integer. Under a legal but unusual operating condition the value exceeds the range of that type. The conversion is unguarded. The module raises an exception, shuts itself down, and emits its internal diagnostic word onto the shared bus. The downstream controller reads that word as a measurement and acts on it.",
+      "report_hard": "A controller commanded a full-scale actuator deflection in response to a reading no physical condition could produce. The sensor module that produced it had logged an internal exception microseconds earlier and taken itself offline."
+    },
+    {
+      "id": "C4",
+      "target_rule": 11,
+      "key": {
+        "all_of": [
+          [
+            "stack"
+          ]
+        ],
+        "any_of": [
+          [
+            "high-water",
+            "high water",
+            "watermark",
+            "overflow check",
+            "overflow detection",
+            "measure",
+            "measured",
+            "headroom",
+            "size the stack",
+            "sizing"
+          ]
+        ]
+      },
+      "status": "contested",
+      "report_easy": "A control unit misbehaves under heavy load, rarely and not reproducibly. Static review finds one recursive call path. A design document reports 41 percent stack usage. Measurement on the running system under the worst-case input sequence shows 94 percent. The part has no memory protection unit and the build has no stack overflow detection enabled.",
+      "report_hard": "A control unit misbehaves under heavy load, rarely, and has never been reproduced on the bench. The design documents report comfortable memory margins. The part has no memory protection unit."
+    },
+    {
+      "id": "C5",
+      "target_rule": 19,
+      "key": {
+        "all_of": [
+          [
+            "wear",
+            "erase cycle",
+            "erase-cycle",
+            "p/e",
+            "program/erase",
+            "endurance"
+          ]
+        ],
+        "any_of": [
+          [
+            "budget",
+            "batch",
+            "rate",
+            "writes per",
+            "wear-aware",
+            "wear aware",
+            "flash file system",
+            "littlefs"
+          ]
+        ]
+      },
+      "status": "documented",
+      "report_easy": "A device writes telemetry to an internal 8 GB managed flash part at a steady rate. After roughly four years in service units begin to fail permanently and cannot be repaired in the field. The part's datasheet rates it at 3000 program/erase cycles per cell. No write budget appears anywhere in the design documents.",
+      "report_hard": "Units that log telemetry continuously begin to fail permanently after about four years in service. The failures cluster by in-service date rather than by climate or duty, and no field repair restores them."
+    },
+    {
+      "id": "C6",
+      "target_rule": 25,
+      "also_rule": 22,
+      "key": {
+        "all_of": [
+          [
+            "canary",
+            "staged",
+            "phased",
+            "stage the rollout",
+            "hardware revision",
+            "per revision"
+          ]
+        ],
+        "any_of": [
+          [
+            "a/b",
+            "rollback",
+            "revert",
+            "confirm",
+            "partition",
+            "never update the whole",
+            "subset"
+          ]
+        ]
+      },
+      "status": "documented",
+      "report_easy": "An update built for hardware revision B is dispatched to the whole installed base, which still contains revision A units. The revision A units apply it, stop responding, and cannot be recovered over the network. Recovery requires physically returning each unit.",
+      "report_hard": "An update is dispatched to the whole installed base. A subset of units stop responding and cannot be recovered over the network. The affected units turn out to share a manufacturing date range."
+    },
+    {
+      "id": "C7",
+      "target_rule": 25,
+      "limit_of_rule": 22,
+      "key": {
+        "all_of": [
+          [
+            "staged",
+            "phased",
+            "canary",
+            "gradual",
+            "subset",
+            "cohort"
+          ]
+        ],
+        "any_of": [
+          [
+            "check-in",
+            "check in",
+            "telemetry",
+            "field health",
+            "over time",
+            "days",
+            "weeks",
+            "monitor"
+          ]
+        ]
+      },
+      "status": "documented",
+      "report_easy": "An update is pushed to the entire installed base at once. Every device boots, reports healthy, and operates normally. About two weeks later a growing fraction of them drain their batteries, shut down, and lose their primary function. The health check that ran immediately after the update passed on every unit.",
+      "report_hard": "An update is dispatched to the whole installed base. Every unit reports healthy immediately afterwards and operates normally. Two weeks later a growing fraction lose their primary function."
+    },
+    {
+      "id": "C8",
+      "target_rule": 24,
+      "key": {
+        "all_of": [
+          [
+            "rollback",
+            "downgrade",
+            "older version",
+            "version counter",
+            "anti-rollback"
+          ]
+        ],
+        "any_of": [
+          [
+            "counter",
+            "monotonic",
+            "efuse",
+            "security version",
+            "refuse",
+            "reject",
+            "lower"
+          ]
+        ]
+      },
+      "status": "documented",
+      "report_easy": "An attacker with brief physical access to a device installs a previous firmware release that carries a known remote vulnerability. The image is correctly signed with the vendor key and the bootloader accepts it.",
+      "report_hard": "A device is compromised through a vulnerability the vendor patched a year ago. The bootloader log shows the image it is running passed signature verification."
+    }
+  ]
+}

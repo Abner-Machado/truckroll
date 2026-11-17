@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 12.2s ===
+The single engineering decision that would most likely have prevented this was to verify firmware signatures in the bootloader with a key the application cannot overwrite. This would have prevented the compromised image from running even if it passed signature verification checks within the application. RULE: 23

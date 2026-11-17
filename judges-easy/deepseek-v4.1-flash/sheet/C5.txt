@@ -1,0 +1,6 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 13.1s ===
+Decide a wear budget up front: take the part's 3000 erase cycles, convert it into an allowed number of writes per day for the expected service life, and design the storage layer (batching, log-structured or littlefs-style wear leveling) to stay under it.
+
+That budget would have exposed the mismatch between the telemetry write rate and the flash endurance years before deployment, forcing batched or wear-leveled writes instead of steady small updates that burned through every cell's cycle count in roughly four years.
+
+RULE: 19

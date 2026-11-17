@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 10.9s ===
+Use an unsigned 32-bit (or 64-bit) uptime counter with wrap-safe elapsed-time arithmetic ÔÇö subtracting two timestamps and casting the difference ÔÇö rather than a signed counter compared against absolute thresholds.
+
+At 10 ms per tick a signed 32-bit counter crosses 2^31 after roughly 248.6 days (~8.1 months), goes negative, and the absolute comparison trips failsafe; an unsigned wrap-safe comparison makes the rollover a harmless non-event, which is why co-commissioned units would have tripped together and would now simply keep running.

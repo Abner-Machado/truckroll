@@ -1,0 +1,83 @@
+{
+  "forced_label_map": {
+    "C1": {
+      "S1": "sheet",
+      "S2": "generic",
+      "S3": "none"
+    },
+    "C2": {
+      "S1": "generic",
+      "S2": "none",
+      "S3": "sheet"
+    },
+    "C3": {
+      "S1": "none",
+      "S2": "sheet",
+      "S3": "generic"
+    },
+    "C4": {
+      "S1": "sheet",
+      "S2": "generic",
+      "S3": "none"
+    },
+    "C5": {
+      "S1": "generic",
+      "S2": "none",
+      "S3": "sheet"
+    },
+    "C6": {
+      "S1": "none",
+      "S2": "sheet",
+      "S3": "generic"
+    },
+    "C7": {
+      "S1": "sheet",
+      "S2": "generic",
+      "S3": "none"
+    },
+    "C8": {
+      "S1": "generic",
+      "S2": "none",
+      "S3": "sheet"
+    }
+  },
+  "knockout": 11,
+  "label_order": "balanced rotation by case index",
+  "pack_digests": {
+    "knockout-11-forced/C1.txt": "26dda3711aec6f85",
+    "knockout-11-forced/C2.txt": "0a023918d433a821",
+    "knockout-11-forced/C3.txt": "9e81c7f6873ec205",
+    "knockout-11-forced/C4.txt": "8229e5f1306c6580",
+    "knockout-11-forced/C5.txt": "f24c8cd438363d42",
+    "knockout-11-forced/C6.txt": "4a1426bc17737957",
+    "knockout-11-forced/C7.txt": "430c852a09f7fdf2",
+    "knockout-11-forced/C8.txt": "8600236e7637d34e",
+    "knockout-11-generic/C1.txt": "565e7f5f64ef943a",
+    "knockout-11-generic/C2.txt": "19cd26e48fc1725f",
+    "knockout-11-generic/C3.txt": "5e209f1f479fd515",
+    "knockout-11-generic/C4.txt": "031666d72775b668",
+    "knockout-11-generic/C5.txt": "c6d65846be2b63ac",
+    "knockout-11-generic/C6.txt": "d91dde42eb4e8850",
+    "knockout-11-generic/C7.txt": "efa0b2617cc505a8",
+    "knockout-11-generic/C8.txt": "a7f171719daacbb0",
+    "knockout-11-none/C1.txt": "66ec890dd41ff86b",
+    "knockout-11-none/C2.txt": "91460e9882d4e1f3",
+    "knockout-11-none/C3.txt": "447c19300668398b",
+    "knockout-11-none/C4.txt": "e7777817eb77d3ee",
+    "knockout-11-none/C5.txt": "b50d16e594409369",
+    "knockout-11-none/C6.txt": "69b34db15de1064f",
+    "knockout-11-none/C7.txt": "1e233626ebd68174",
+    "knockout-11-none/C8.txt": "322cfaecab497bcc",
+    "knockout-11-sheet/C1.txt": "76f65f3776a20b6b",
+    "knockout-11-sheet/C2.txt": "ed761deae1fb6625",
+    "knockout-11-sheet/C3.txt": "6b7711cef2343342",
+    "knockout-11-sheet/C4.txt": "cd8118a045288878",
+    "knockout-11-sheet/C5.txt": "71c10d499661e661",
+    "knockout-11-sheet/C6.txt": "5fe0043021533cb1",
+    "knockout-11-sheet/C7.txt": "d3e30d56110274a5",
+    "knockout-11-sheet/C8.txt": "46694436843b177b"
+  },
+  "report": "report_hard",
+  "sheet_digest": "0b10139f7baf823c",
+  "version": "0.1.0"
+}

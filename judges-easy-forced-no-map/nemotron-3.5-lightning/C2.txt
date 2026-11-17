@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 27.6s ===
+BEST: S3
+
+The incident involves a signed 32-bit uptime counter incremented every 10 ms that causes all units to enter failsafe after ~8 months. Item 9 in S3 directly addresses this by mandating counter wraparound handling: "Compare deadlines with unsigned subtraction, `(now - start) >= timeout`, and assume the counter wraps: 32-bit milliseconds roll over." Without this, the signed 32-bit counter overflows after ~248 days, producing negative values that break time-based logic and trigger failsafe uniformly across the fleet.

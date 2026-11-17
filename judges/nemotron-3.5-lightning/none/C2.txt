@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 22.8s ===
+The engineering decision to implement a properly configured watchdog timer with mandatory firmware heartbeats and adequate timeout margins would have prevented this. By ensuring the firmware periodically refreshes the watchdog before it can expire after roughly eight months of operation, the controller avoids unexpected failsafe resets, and since all units from the same production batch share identical firmware behavior, they would remain operational together rather than failing synchronously.

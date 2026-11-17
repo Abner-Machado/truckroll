@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 16.9s ===
+Check the status returned by every sensor, HAL and SDK call and route any failure into the fault record, rather than consuming the last value as valid data. Had the failed transfer been reported as an error, the control loop would have rejected the sample and held a safe state instead of commanding full-scale deflection from a garbage reading.
+
+RULE: 3

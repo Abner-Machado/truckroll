@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 22.5s ===
+BEST: S2 ÔÇö its "Validate all external input" would have forced a range/plausibility check on the value before narrowing it to int16 and on the word the controller reads off the bus, breaking the chain that let the diagnostic be acted on as a measurement; S3's nearest items (check every call's return value, record and reset in the fault handler) address call failures and fault paths, not an unguarded numeric conversion or a diagnostic word sharing the measurement channel.

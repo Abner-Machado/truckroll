@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 11.1s ===
+BEST: S3 ÔÇö item 25 requires canary deployment on real devices of every hardware revision with staged rollout gated on healthy check-ins, so revision A units would have failed in a small canary group instead of the whole fleet (S1's "plan for backwards compatibility" is too vague to prevent this, and S2 is empty).

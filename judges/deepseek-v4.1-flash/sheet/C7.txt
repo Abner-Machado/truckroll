@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 25.5s ===
+The decision was to ship the update as a signed A/B image that must confirm its own health inside a watchdog-gated window before the bootloader commits to it, reverting automatically otherwise. That would have turned the first devices running the bad image into a visible revert signal instead of a silent success, so the defect surfaced while only part of the base carried it and the rollout could be halted rather than every unit inheriting a running-but-broken image.
+
+RULE: 22

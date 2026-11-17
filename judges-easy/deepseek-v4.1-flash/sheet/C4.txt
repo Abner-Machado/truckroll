@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 15.4s ===
+Sizing the stack from measured worst-case usage ÔÇö enabling the kernel's stack-overflow check, reading the high-water mark after the worst-case path rather than an idle run, and keeping real headroom ÔÇö is the decision that most likely would have prevented this. Measuring the actual high-water mark under the worst-case sequence, instead of trusting the 41 percent figure in the design document, would have shown the 94 percent usage before the unit shipped and forced either a larger stack or removal of the recursion.
+
+RULE: 11

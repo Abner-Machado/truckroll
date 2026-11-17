@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 18s ===
+Implement an A/B partition scheme for OTA updates with signed images and bootloader-enforced health verification that automatically reverts to the previous good image if the new image fails its self-check within a watchdog window. This prevents units from being stranded with broken firmware, as the bootloader reverts the update before the device becomes unresponsive, and the manufacturing date range correlation is mitigated because reversion happens transparently regardless of when the unit was produced.
+
+RULE: 22

@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 126.1s ===
+Guard the float-to-int16 conversion with an explicit range check (or a saturating/error-returning conversion) whose result is checked before the cast, routing any out-of-range value into the module's fault record rather than letting it fault. That check would have caught the over-range value at the source, so no exception, no shutdown, and no diagnostic word would ever reach the shared bus for the controller to misread as a measurement. RULE: 3

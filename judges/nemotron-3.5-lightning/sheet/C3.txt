@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 14.7s ===
+The single engineering decision that would most likely have prevented this is to check the return value of every sensor HAL peripheral call and route errors to a fault record, so the driver could detect the sensor's internal exception and enter a safe fallback state rather than propagating a maximum reading to the actuator.  
+How it would have prevented it: By detecting the sensor's reported internal exception through return-value checking, the driver would have known the reading was invalid and could have substituted a safe default or disabled the actuator instead of commanding a full-scale deflection based on bogus data.  
+RULE: 3

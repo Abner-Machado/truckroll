@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 32.2s ===
+The engineer should have sized stacks from empirical worst-case measurement rather than design estimates and enabled kernel stack-overflow protection. This would have prevented the failure because the 94% stack usage under worst-case inputs would have been detected with high-water mark analysis, allowing headroom allocation before the stack overflow crashed the part with no memory protection. RULE: 11

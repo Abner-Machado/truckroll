@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 11.6s ===
+The single engineering decision most likely to have prevented this is to bound every wait on hardware with a timeout. This would have prevented the controller from blocking forever on a peripheral flag, allowing a controlled failure rather than an unexpected failsafe. RULE: 8

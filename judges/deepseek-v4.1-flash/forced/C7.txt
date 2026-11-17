@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 12.3s ===
+BEST: S1 ÔÇö item 25 (canary on real devices of every hardware revision, then a phased rollout gated on post-update health check-ins) would have confined a latent two-week-latency regression to an early stage instead of the whole installed base, which no immediate-health A/B rollback or generic "test thoroughly" item catches.

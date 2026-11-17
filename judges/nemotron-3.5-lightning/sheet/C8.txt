@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 20.6s ===
+Implement version-based rollback protection that refuses to boot any firmware image with a version counter lower than the currently running version. The bootloader would reject the old vulnerable firmware even though it has a valid signature, preventing the device from booting into the known-vulnerable version that was patched a year ago. RULE: 24

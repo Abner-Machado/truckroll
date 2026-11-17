@@ -1,0 +1,4 @@
+=== OK modelo: nvidia/mistralai/mistral-large-4-1t-a52b | 37s ===
+Gate every rollout stage on canary devices of each hardware revision before widening it. Testing the revision-B image on real revision-A units would have caught the incompatibility before the fleet-wide dispatch.
+
+RULE: 25

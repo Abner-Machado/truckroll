@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 34.2s ===
+Rule 19 ÔÇö design the telemetry path around the flash's finite erase budget instead of treating logging as free. Budgeting writes per day, batching them, and putting them on a wear-aware file system spreads the part's rated erase cycles across the intended service life, so four years of continuous logging stays inside the endurance envelope rather than permanently wearing the cells out.
+
+RULE: 19

@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 11.6s ===
+Implementing input validation with bounds checking before the floating-point to 16-bit signed integer conversion. This would detect values exceeding the type's range and trigger controlled error handling rather than allowing the out-of-range value to be emitted as a diagnostic word onto the shared bus, where the downstream controller would interpret it as a valid measurement.

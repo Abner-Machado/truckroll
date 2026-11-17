@@ -1,0 +1,4 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 23.4s ===
+Enforce a monotonic anti-rollback version counter in the bootloader, so a correctly signed image whose version is below the one already on the device is refused. It would have prevented the attack because signature verification only proves the image came from the vendor, while the counter proves it is the newest one ÔÇö the attacker's downgrade would be rejected before execution regardless of physical access.
+
+RULE: 24

@@ -1,0 +1,3 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-bolt-e4b | 7.3s ===
+The single engineering decision that would most likely have prevented this is to check the return value of every HAL, SDK and peripheral call. This would have reported the failure condition instead of the control unit reporting healthy while the device was deaf.
+RULE: 3

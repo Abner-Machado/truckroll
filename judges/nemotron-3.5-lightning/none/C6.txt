@@ -1,0 +1,2 @@
+=== OK modelo: nvidia/nvidia/nemotron-3.5-lightning-30b-a3b | 10.6s ===
+Implementing hardware revision verification and firmware compatibility checking before allowing over-the-air updates. This would have prevented the update from being applied to units with the affected manufacturing date range's hardware revision, blocking the incompatible firmware from bricking those devices.

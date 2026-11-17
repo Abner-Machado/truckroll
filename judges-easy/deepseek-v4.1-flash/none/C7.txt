@@ -1,0 +1,2 @@
+=== OK modelo: openrouter/deepseek/deepseek-v4.1-flash-1017 | 11.5s ===
+Roll the update out in stages to a canary cohort held under observation for longer than the failure's onset latency, instead of pushing it to the entire installed base simultaneously. Because the fault accumulated over weeks of ordinary operation rather than at boot, only a retained cohort observed through that window would have surfaced the drain and shutdowns while the rollout could still be halted, sparing the rest of the fleet.
