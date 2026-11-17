@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  selftest:
+    # The scorer has to reject a fluent answer that says nothing. If that ever stops being
+    # true, every number in SCORES.md is worthless, so it runs first and everywhere.
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python: ["3.10", "3.12", "3.13"]
+        include:
+          - os: windows-latest
+            python: "3.12"
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Scorer selftest
+        run: python jury.py selftest
+      - name: Build the packs
+        run: python jury.py packs
+      - name: Score the committed answers
+        run: python jury.py score --out scores-from-ci.md
+      - name: Knockout is read off the same answers
+        run: python -c "import pathlib,sys; t=pathlib.Path('scores-from-ci.md').read_text(encoding='utf-8'); sys.exit(0 if 'load-bearing' in t else 'the knockout section came back empty')"
+
+  no-dependencies:
+    # The README says no install and no network. This is that claim as a check, with the
+    # allowed set taken from the interpreter rather than from a list someone maintains.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Every import is standard library
+        run: python tools/stdlib_guard.py .
+
+  packs-are-reproducible:
+    # packs/*.txt is not committed. The manifest carries each prompt's digest instead, so
+    # the prompts stay auditable only while a rebuild produces the same bytes.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Build twice and compare every digest
+        run: python tools/check_reproducible.py

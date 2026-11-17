@@ -1,5 +1,8 @@
 # truckroll
 
+[![CI](https://github.com/Abner-Machado/truckroll/actions/workflows/ci.yml/badge.svg)](https://github.com/Abner-Machado/truckroll/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Thirty-one decisions that decide whether embedded firmware survives the field, and a way
 to check that the sheet actually earns them.
 
@@ -88,6 +91,12 @@ python jury.py packs --knockout 7 # drop a rule and ask again
 Feed `packs/<arm>/<case>.txt` to whatever model you have and save its reply as
 `judges/<your-model>/<arm>/<case>.txt`. That is the whole protocol. Python standard
 library only: no install, no network, no key.
+
+That last sentence is a check, not a promise. `tools/stdlib_guard.py` parses every file in
+the repository and fails CI if one import is not in the running interpreter's standard
+library, so the claim cannot quietly stop being true. `tools/check_reproducible.py` builds
+the packs twice and fails if a single digest moves, because the committed manifest is the
+only record of prompts that are not themselves committed.
 
 To use the sheet rather than test it, read [TASTE.md](TASTE.md) before a design review, or
 put it in front of an agent that is about to write firmware. Mark each rule pass, fail or

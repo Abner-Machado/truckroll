@@ -10,3 +10,6 @@ __pycache__/
 # Working copies, not part of the record.
 *.bak
 *.bak-*
+
+# Written by a CI run, not part of the record.
+scores-from-ci.md
